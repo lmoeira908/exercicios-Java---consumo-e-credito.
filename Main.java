@@ -1,33 +1,34 @@
+/*Grupo formado por:
+  JULIA CLARA CORDEIRO BUSCARINI
+  LEONARDO MOREIRA DE OLIVEIRA
+  LUIS FELIPE DE SOUSA FERREIRA
+  RUTH MARIA DO NASCIMENTO TEIXEIRA
+  DANILO SILVA*/
+
 importar java.util.Scanner;
 
-aula pública Exercício {
-   public static void main(String[] args) {
-        int conta, saldoInicial, itensComprados, creditosIns, limitCredito, saldoNv;
-
+public class Exercício2 {
+    public static void main(String[] args) {
+        int kmdirigido, litrosConsumidos, nTanques, x;
+        flutuar Consumo; 
+      
     Entrada do Scanner = new Scanner(System.in);
+    
+    System.out.println("Digite o numero de tanques de combustivel que deseja: \nDigite -1 para finalizar.");
+        nTanques = entrada.nextInt();
+    
 
-        System.out.println("Digite o número da conta ou -1 para finalizar.");
-            conta = entrada.nextInt();
-        while(conta != -1){
-            System.out.println("Digite o saldo inicial do cliente:");
-                saldoInicial = entrada.nextInt();
-            System.out.println("Digite o total do crédito:");
-                itensComprados = entrada.nextInt();
-            System.out.println("Digite o total de créditos do mes:");
-                creditosIns = entrada.nextInt();
-            System.out.println("Digite ou limite de crédito autorizado:");
-                limiteCrédito = entrada.nextInt();
-                    saldoNv = saldoInicial + itensComprados - creditosIns;
-
-        if (saldoNv > limiteCredito){
-            System.out.println("Limite de crédito excedido.");
-            conta = -1;
-        } senão
-            System.out.printf("Limite de crédito aprovado. Saldo atual:\n %d \n", saldoNv);
-            conta = -1;
-        }
-
-
+    for(x = 0; x < qtdTanques; x++){
+    
+        System.out.println("Digite o numero de quilometros: ");
+            kmdirigido = entrada.nextInt();
+        System.out.println("Quantidade digital de litros consumidos: ");
+            litrosConsumidos = entrada.nextInt();
+        Consumo = (float) kmdirigido/litrosConsu;
+        System.out.printf("O consumo de combustível é de: %f Litros\n", Consumo);
+            }
+        
+    
     }
 
 }
